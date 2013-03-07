@@ -3,11 +3,19 @@ html
   head
     title= 'WFortin - Blog'
     meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Droid+Sans')
     link(rel='stylesheet', href='/css/bootstrap.css')
-    link(rel='stylesheet', href='/css/app.css')
+    style(type='text/css')
+      body {
+        padding-top: 80px;
+        padding-bottom: 40px;
+      }
+    link(rel='stylesheet', href='/css/bootstrap-responsive.css')
     link(rel='stylesheet', href='/css/prettify.css')
+    link(rel='stylesheet', href='/css/app.css')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(src='/js/bootstrap.js')
     script(src='/js/jquery.timeago.js')
     script(src='/js/prettify.js')
     script(src='/js/app.js')
@@ -15,24 +23,28 @@ html
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
+          a(data-toggle='collapse',data-target='.nav-collapse').btn.btn-navbar
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
           a.brand(href='/') 
             img(src='/img/logo-small.png')
       .header-line
-    .wrap
-      .container
-        .row
-          .span9
-            block content
-          .span3
-            .well.sidebar-nav
-              ul.nav.nav-list
-                li.nav-header categories
-                - each cat in categoryList
-                  li
-                    a(href=categoryUrl(cat)) #{cat}
-                li.nav-header tags
-                - each tag in tagList
-                  li
-                    a(href=tagUrl(tag)) #{tag}
+    //.wrap
+    .container
+      .row
+        .span9
+          block content
+        .span3
+          .well.sidebar-nav
+            ul.nav.nav-list
+              li.nav-header categories
+              - each cat in categoryList
+                li
+                  a(href=categoryUrl(cat)) #{cat}
+              li.nav-header tags
+              - each tag in tagList
+                li
+                  a(href=tagUrl(tag)) #{tag}
     script
       prettyPrint();
