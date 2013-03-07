@@ -14,14 +14,12 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Droid Sans';
 	font-smooth : always;
 	text-transform: uppercase;
-}
-
-.post h1{
 	background-color: #26d3ff;
 	padding: 7px;
+	color: #fff;
 }
 
-.post h1 a{
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 	color: #fff;
 }
 

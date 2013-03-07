@@ -13,3 +13,6 @@ block content
       - each tag in post.tags
         a(href=tagUrl(tag))
           span.label.label-info #{tag}
+    h3 Comments
+    .fb-comments(data-href='#{post.url}', data-width='470', data-num-posts='10')
+
