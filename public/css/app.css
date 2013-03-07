@@ -1,0 +1,58 @@
+/*---------BASE HTML--------*/
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background: url('../img/bg.png');
+	background-repeat: repeat;
+	font-family: 'Droid Sans';
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Droid Sans';
+	text-transform: uppercase;
+}
+
+.post h1{
+	background-color: #26d3ff;
+	padding: 7px;
+}
+
+.post h1 a{
+	color: #fff;
+}
+
+a{
+	color: #26d3ff;
+}
+a:hover{
+	color: #2696ff;
+	text-decoration: none;
+}
+
+.label {
+	margin-right: 5px;
+	background-color: #26baff;
+}
+
+/*---------HEADER-------*/
+
+.navbar .brand{
+	padding: 0px;
+}
+
+.header-line {
+	background-color : #26d3ff;
+	height: 4px;
+	width: 100%;
+}
+
+
+/*---------CODE SNIPPETS--------*/
+pre{
+	background-color: #2c3033;
+}
+
+code{
+	background-color: #2c3033;
+	border: 1px solid #2c3033;
+}

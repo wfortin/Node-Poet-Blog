@@ -1,20 +1,25 @@
 !!!
 html
   head
-    title= 'Poet Demo'
+    title= 'WFortin - Blog'
     meta(charset='utf-8')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Droid+Sans')
     link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/app.css')
+    link(rel='stylesheet', href='/css/prettify.css')
   body
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
-          a.brand(href='/') Poet Demos
+          a.brand(href='/') 
+            img(src='/img/logo-small.png')
+      .header-line
     .wrap
       .container
         .row
-          .span8
+          .span9
             block content
-          .span4
+          .span3
             .well.sidebar-nav
               ul.nav.nav-list
                 li.nav-header categories
@@ -25,3 +30,6 @@ html
                 - each tag in tagList
                   li
                     a(href=tagUrl(tag)) #{tag}
+    script(src='/js/prettify.js')
+    script
+      prettyPrint();
