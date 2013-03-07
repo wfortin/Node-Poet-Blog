@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{
 	padding: 7px;
 }
 
-.post h1 a{
+.post a{
 	color: #fff;
 }
 
@@ -37,7 +37,7 @@ a:hover{
 /*---------HEADER-------*/
 
 .navbar .brand{
-	padding: 0px;
+	padding: 0;
 }
 
 .header-line {
