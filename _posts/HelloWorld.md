@@ -11,8 +11,6 @@ Let's start right with this blog... I could have done it on wordpress or drupal 
 
 Here's how I set up my blog.<!--more-->
 
-If you want more information on how to set up a Poet Blog see the [official website](http://jsantell.github.com/poet/)
-
 First follow the [tutorial from the maker of poet](http://jsantell.com/post/getting-started-with-poet).
 
 We now want to host our blog on Heroku (for free!) so that other people can read it. There are little modifications to make. Here it goes :
