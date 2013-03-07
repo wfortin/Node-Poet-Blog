@@ -47,6 +47,10 @@ a:hover{
 	width: 100%;
 }
 
+/*---------BLOG POST-----------*/
+.dateBox{
+	padding: 5px 0px 10px;
+}
 
 /*---------CODE SNIPPETS--------*/
 pre{

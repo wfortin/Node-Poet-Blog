@@ -7,6 +7,10 @@ html
     link(rel='stylesheet', href='/css/bootstrap.css')
     link(rel='stylesheet', href='/css/app.css')
     link(rel='stylesheet', href='/css/prettify.css')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(src='/js/jquery.timeago.js')
+    script(src='/js/prettify.js')
+    script(src='/js/app.js')
   body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -30,6 +34,5 @@ html
                 - each tag in tagList
                   li
                     a(href=tagUrl(tag)) #{tag}
-    script(src='/js/prettify.js')
     script
       prettyPrint();
